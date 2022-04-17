@@ -74,7 +74,8 @@ client.on('interactionCreate', async interaction => {
                     }
                     
                 }).catch(function (error) {
-                    console.error(error);
+                    interaction.channel.send('Sorry! There is no tweets on that hashtag. Try another!');
+
             }).catch(function (error) {
                 interaction.channel.send('Sorry! There is no tweets on that hashtag. Try another!');
             })
