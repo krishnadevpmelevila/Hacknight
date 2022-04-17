@@ -74,10 +74,10 @@ client.on('interactionCreate', async interaction => {
                     }
                     
                 }).catch(function (error) {
-                    interaction.channel.send('Sorry! There is no tweets on that hashtag. Try another!');
+                    interaction.reply('Sorry! There is too much request at a time! as it is on a free plan, We can afford such amount of request at a time. So kindly Please try again later.');
 
             }).catch(function (error) {
-                interaction.channel.send('Sorry! There is no tweets on that hashtag. Try another!');
+                interaction.reply('Sorry! There is no tweets on that hashtag. Try another!');
             })
         }
 
